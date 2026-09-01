@@ -15,7 +15,7 @@ description: >
 Produce technical writing with technical correctness, explicit assumptions,
 rigorous reasoning, clear explanation, stable terminology, and readable
 Markdown. Aim for technical-blog readability with paper-like rigor; do not make
-prose academic merely to appear rigorous.
+prose academic merely to appear rigorous or erase a writer's legitimate voice.
 
 Prioritize:
 
@@ -25,6 +25,24 @@ Formatting never overrides technical meaning. Match formality to the task: do
 not turn every document into a paper, formal proof, benchmark report, or
 diagram-heavy system design.
 
+## Voice and register
+
+Rigor applies to claims, evidence, reasoning, code, mathematics, and format;
+it does not require an academic surface style. A technical article may retain
+first-person experience, direct judgment, a natural aside, uneven paragraph
+length, and the author's own sentence rhythm when they make the explanation
+clearer.
+
+Preserve a real observation, failed attempt, recommendation, or personal
+preference when it is relevant and accurately scoped. Do not invent an
+incident, opinion, or informal persona merely to make prose sound human.
+
+Remove templated filler and forced symmetry rather than replacing it with
+formal boilerplate. In particular, do not add generic topic openings,
+section-by-section recaps, empty transitions, or conclusions that merely repeat
+the article. Keep headings, lists, code fences, formulas, citations, and
+figures as structured as the content requires.
+
 ## Mode and depth
 
 Choose a mode first:
@@ -33,8 +51,9 @@ Choose a mode first:
   only the artifacts that improve the explanation. Do a lightweight consistency
   check before returning.
 - **Rewrite:** preserve technical meaning, assumptions, terminology, audience,
-  and author voice. Explain any correction to an incorrect or unsupported claim;
-  direct rewriting is enough for ordinary wording changes.
+  and author voice. Correct unsupported claims before editing style. Prefer
+  deletion or a local rewrite when removing templated language; do not normalize
+  accurate personal phrasing into generic formal prose.
 - **Review:** check correctness before punctuation. Review in this order:
   technical correctness, specification/assumptions, reasoning, terminology,
   code/math/complexity, experiments/evidence, structure/diagrams, then
